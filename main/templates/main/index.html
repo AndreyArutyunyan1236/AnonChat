@@ -6,10 +6,14 @@
     <title>AnonChat Page!</title>
 </head>
 <body>
-    <div class="messages">
+    <div class="messages" style="display: inline-block; 
+                                border: 1px solid black; padding: 20px;
+                                border-radius: 20px;">
 
         {% for m in messages %}
-            <p> {{ m.message }} </p>
+            <p style="display: table;
+                    border: 0.5px solid black; padding: 10px;
+                    border-radius: 10px;"> {{ m.message }} </p>
         {% endfor %}
 
     </div>
